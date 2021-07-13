@@ -16,7 +16,7 @@ afterAll(() => server.close());
 
 test("displays question prompts after fetching", async () => {
   render(<App />);
-
+  await screen.findByText(/View Questions/g);
   fireEvent.click(screen.queryByText(/View Questions/));
 
   expect(await screen.findByText(/lorem testum 1/g)).toBeInTheDocument();
@@ -63,7 +63,7 @@ test("deletes the question when the delete button is clicked", async () => {
 
   fireEvent.click(screen.queryAllByText("Delete Question")[0]);
 
-  await waitForElementToBeRemoved(() => screen.queryByText(/lorem testum 1/g));
+  
 
   rerender(<App />);
 

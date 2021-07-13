@@ -1,17 +1,6 @@
 {
   "questions": [
     {
-      "id": 1,
-      "prompt": "What special prop should always be included for lists of elements?",
-      "answers": [
-        "id",
-        "name",
-        "key",
-        "prop"
-      ],
-      "correctIndex": 2
-    },
-    {
       "id": 2,
       "prompt": "A React component is a function that returns ______.",
       "answers": [
@@ -20,7 +9,7 @@
         "props",
         "state"
       ],
-      "correctIndex": 1
+      "correctIndex": 2
     },
     {
       "id": 3,
@@ -56,17 +45,6 @@
       "correctIndex": 3
     },
     {
-      "id": 6,
-      "prompt": "Returning different elements from a component depending on the state of your application is known as _____ rendering.",
-      "answers": [
-        "voodoo",
-        "conditional",
-        "reactive",
-        "controlled"
-      ],
-      "correctIndex": 1
-    },
-    {
       "prompt": "what is life ",
       "answers": [
         "42",
@@ -78,34 +56,23 @@
       "id": 7
     },
     {
-      "prompt": "Why is Ivan the cooliest",
+      "prompt": "What came first",
       "answers": [
-        "just cause",
-        "cause he drinks water",
-        "cause all the swag ",
-        "cause he drinks hella beers "
+        "the chicken",
+        "the egg",
+        "Dion",
+        "Dions forehead"
       ],
-      "correctIndex": "2",
-      "id": 8
-    },
-    {
-      "prompt": "2+2",
-      "answers": [
-        "1",
-        "5",
-        "7",
-        "i'm good at math"
-      ],
-      "correctIndex": "3",
+      "correctIndex": 3,
       "id": 9
     },
     {
-      "prompt": "1+1",
+      "prompt": "Why did the chicken cross the road",
       "answers": [
-        "2",
-        "3",
-        "4",
-        "1,000,000"
+        "To save Poppop",
+        "To get Poppop a beer",
+        "To run away from Jelena",
+        "To wrestle Drew"
       ],
       "correctIndex": "3",
       "id": 10
