@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 
 function QuestionForm({ onQuestionSubmit }) {
+  let controller = null
   const [formData, setFormData] = useState({
     prompt: "",
     answer1: "",
@@ -18,9 +19,11 @@ function QuestionForm({ onQuestionSubmit }) {
   }
 
   function handleSubmit(event) {
+    controller = new AbortController()
     event.preventDefault();
     console.log(formData);
     const configObject = {
+      signal: controller.signal,
       method: "POST",
       headers: {"Content-Type": "application/json"
       },
@@ -43,6 +46,7 @@ function QuestionForm({ onQuestionSubmit }) {
         correctIndex: 0,
       })
     })
+    // controller.abort()
   }
 
   return (
